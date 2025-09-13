@@ -27,3 +27,7 @@ if ! command -v patchelf >/dev/null 2>&1; then
   echo "错误: 未找到 patchelf 命令"
   exit 1
 fi
+
+#将cgcc.sh 复制到 /usr/local/bin
+sudo cp ./cgcc.sh /usr/local/bin/cgcc
+sudo chmod +x /usr/local/bin/cgcc
